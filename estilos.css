@@ -290,4 +290,24 @@ body{
     background-color: #6c757d;
       height: 14vh;
       border: 2px solid white;
+      display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+      .listaNav{
+        display: flex;
+         list-style: none; 
+        align-items: center;
+        justify-content: space-between;
+        .listItem{
+          margin-right: 10px;
+          
+          .linkNav{
+              color: #3a0a07;
+              text-decoration: none;
+              font-weight: 500;
+              
+            
+          }
     }
+}
+}

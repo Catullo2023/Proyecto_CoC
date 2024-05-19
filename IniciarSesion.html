@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilosLogin.css">
+    <title>Iniciar Sesión</title>
+</head>
+<body>
+    <header>
+       
+            <a href="index.html" class="logoLibro">
+                <img id="librosCabecera" src="imagenes/libros.png" alt="libros">
+                <span id="textoFondo">Biblioteca Digital</span>
+            </a>
+        
+    </header>
+    <main>
+        <div class="Contenedor">
+            <div class="recuadroFondo">
+                <div class="login">
+                    <h2>¿Ya tienes una cuenta?</h2>
+                    <p>Inicia sesión para entrar en nuestra página</p>
+                    <button id="botonIngresar">Ingresar</button>
+                </div>
+                <div class="Registro">
+                    <h2>¿Aún no tienes cuenta?</h2>
+                    <p>Registrate para pertenecer a esta comunidad.</p>
+                    <p>Solo tomará unos segundos</p>
+                    <button id="botonRegistrarse">Registrarse</button>
+                </div>
+            </div>
+        <div class="contenedorFormulario">
+            <form action="" class="formLogin">
+            <h2>Iniciar Sesión</h2>
+            <input type="text" placeholder="Ingrese su email">
+            <input type="password" placeholder="Ingrese su contraseña">
+            <button>Ingresar</button>
+            </form>
+            <form action="" class="formRegistro">
+            <h2>Registrarse</h2>
+           <input type="text" placeholder="Nombre">
+           <input type="text" placeholder="Apellido">
+           <input type="date" placeholder="dd/mm/aaaa">
+           <input type="text" placeholder="Email">
+           <input type="password" placeholder="Contraseña">
+            <select name="pais" id="pais">
+                <option value="nada">Seleccione su país de origen</option>
+                <option value="AR">Argentina</option>
+                <option value="BO">Bolivia</option>
+                <option value="BR">Brasil</option>
+                <option value="CH">Chile</option>
+                <option value="CO">Colombia</option>
+                <option value="EC">Ecuador</option>
+                <option value="PY">Paraguay</option>
+                <option value="PE">Perú</option>
+                <option value="UY">Uruguay</option>
+                <option value="VE">Venezuela</option>
+                <option value="OTR">Otro</option>   
+            </select>
+        <div class="terminos">
+            <input type="checkbox" class="check">
+            <label for="terminos" class="textoCheck">Acepto términos y condiciones</label>
+        </div>
+        <button>Registrarse</button>
+        </form>
+        </div> 
+        </div>
+            
+       
+        
+    </main>
+    <script src="scriptSesion.js"></script>
+</body>
+</html>

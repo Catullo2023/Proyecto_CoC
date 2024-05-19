@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-image: url(imagenes/Main.jpg);
+    /* background-size: cover; */
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+header{
+   
+   
+    
+
+    & #librosCabecera{
+        height: 45px;  
+        margin-right: 5px;
+    }
+    & .logoLibro{
+         margin:5px 5px; 
+       width: 18%;
+           display:flex; 
+          text-decoration: none;
+          color: #3a0a07;
+          font-size: 1.2rem;
+          font-weight: 500;
+          -webkit-text-stroke-width: 1px;
+           justify-content: flex-start;
+           align-items: center;
+          & #textoFondo{
+            
+                background-color: rgba(255, 255, 255, 0.8); 
+                padding: 5px 10px; 
+                border-radius: 5px; 
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+            
+           }
+     }
+    }
+main{
+padding: 20px;
+margin: 100px 170px;
+
+.Contenedor{
+    position: relative;
+   
+.recuadroFondo{
+    display: flex;
+    max-width: 730px;
+    padding: 10px 20px;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);         
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    div{
+        margin: 100px 40px;
+        color: #002847;
+        transition: all 500ms;
+        & p,button{
+           margin-top: 20px; 
+        }
+        & h2{
+             /* font-weight: 500;  */
+           font-size: large;
+        }
+        & button{
+               
+                background-color: #6c757d;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: #ffffff;
+                height: 30px;
+                margin: 20px 5px;
+                padding: 0 10px;
+                font-size: 1rem;
+                font-weight: 100;
+                text-align: center;
+                transition: transform 0.3s, box-shadow 0.3s;
+                cursor: pointer;
+                &:hover{
+               
+                     background-color: #002847;
+                     transform: scale(0.95);
+                     box-shadow: 0 0 20px black;
+                     border: 2px solid black;
+                     
+             
+            }
+        }
+    }
+    
+}
+/* formularios */
+.contenedorFormulario{
+    
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 300px;
+    top: -200px;
+    left: 10px;
+    transition: left 500ms cubic-bezier(0.175,0.885,0.320,1.275);
+    h2{
+        
+        font-size: 1.5rem;
+        color: #002847;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    & form{
+       
+    border-radius: 25px;
+    padding: 20px;
+    background-color:#e5e5e5;
+    position: absolute;
+    & input{
+        margin-top: 10px;
+        padding: 10px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #pais{
+        margin-top: 10px;
+        padding: 10px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .terminos{
+        display: flex;
+        align-items: center;
+        
+         margin-top: 10px;
+       
+        & label{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 12px;
+            margin-left: 5px;
+            margin-top: 10px;
+        }
+    }
+    & button{
+        background-color: #6c757d;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: #ffffff;
+                height: 30px;
+                margin: 20px 5px;
+                padding: 0 10px;
+                font-size: 1rem;
+                font-weight: 100;
+                text-align: center;
+                transition: transform 0.3s, box-shadow 0.3s;
+                cursor: pointer;
+                &:hover{
+               
+                     background-color: #002847;
+                     transform: scale(0.95);
+                     box-shadow: 0 0 20px black;
+                     border: 2px solid black;
+            }
+    }
+}
+& .formLogin{
+display: block;
+}
+& .formRegistro{
+display: none;
+}
+}
+}
+}
+/* media-query */
+@media screen and (max-width:768px) {
+  main{
+    margin-top: 50px;
+   .recuadroFondo{
+    max-width: 400px;
+    height: 350px;
+    flex-direction: column;
+    margin: auto;
+     div{
+      margin: 0;
+      position: absolute;
+    }
+   }
+  } 
+  /* Formularios */
+  .contenedorFormulario{
+    top: -10px;
+    left: -5px;
+    margin: auto;
+    & form{
+        position: relative;
+    }
+  }
+}
