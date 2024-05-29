@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilosLogin.css">
+    <link rel="icon"  href="imagenes/librosAnimado.ico">
     <title>Iniciar Sesión</title>
 </head>
 <body>
@@ -17,6 +18,7 @@
     </header>
     <main>
         <div class="Contenedor">
+
             <div class="recuadroFondo">
                 <div class="login">
                     <h2>¿Ya tienes una cuenta?</h2>
@@ -30,20 +32,37 @@
                     <button id="botonRegistrarse">Registrarse</button>
                 </div>
             </div>
+
         <div class="contenedorFormulario">
-            <form action="" class="formLogin">
+
+            <form action="" id="fLogin" class="formLogin">
             <h2>Iniciar Sesión</h2>
-            <input type="text" placeholder="Ingrese su email">
-            <input type="password" placeholder="Ingrese su contraseña">
-            <button>Ingresar</button>
+            <input type="text" id="email" placeholder="Ingrese su email"> 
+            <span id="email-error" class="error"></span>
+            <div class="contenedorOjo">
+            <input type="password" id="password" placeholder="Ingrese su contraseña">
+            <img src="imagenes/pass/ojo-cruzado.png" id="passOjo" class="ojo" onclick=teVeo()>
+            </div>
+            <span id="password-error" class="error"></span>
+            <button type="submit" id="bIngresar">Ingresar</button>
             </form>
-            <form action="" class="formRegistro">
+
+            <form action="" id="fRegistro" class="formRegistro">
             <h2>Registrarse</h2>
-           <input type="text" placeholder="Nombre">
-           <input type="text" placeholder="Apellido">
-           <input type="date" placeholder="dd/mm/aaaa">
-           <input type="text" placeholder="Email">
-           <input type="password" placeholder="Contraseña">
+           <input type="text" id="nombre" placeholder="Nombre">
+           <span id="nombre-error" class="error"></span>
+           <input type="text" id="apellido" placeholder="Apellido">
+           <span id="apellido-error" class="error"></span>
+           <input type="date" id="fecha" placeholder="dd/mm/aaaa">
+           <span id="fecha-error" class="error"></span>
+           <input type="text" id="R_email" placeholder="Email">
+           <span id="R_email-error" class="error"></span>
+           <div class="contenedorOjo">
+           <input type="password" id="rPassword" placeholder="Contraseña">
+           <img src="imagenes/pass/ojo-cruzado.png" id="rPassOjo" class="ojo" onclick=teVeoRegistro()>
+           <!-- <span id="rPassword-error" class="error"></span> -->
+           </div>
+           <span id="rPassword-error" class="error"></span>
             <select name="pais" id="pais">
                 <option value="nada">Seleccione su país de origen</option>
                 <option value="AR">Argentina</option>
@@ -58,12 +77,15 @@
                 <option value="VE">Venezuela</option>
                 <option value="OTR">Otro</option>   
             </select>
+            <span id="pais-error" class="error"></span>
         <div class="terminos">
-            <input type="checkbox" class="check">
+            <input type="checkbox" id="checkbox" class="check">
             <label for="terminos" class="textoCheck">Acepto términos y condiciones</label>
         </div>
-        <button>Registrarse</button>
+        <span id="checkbox-error" class="error"></span>
+        <button type="submit" id="bRegistrarse">Registrarse</button>
         </form>
+
         </div> 
         </div>
             
@@ -71,5 +93,6 @@
         
     </main>
     <script src="scriptSesion.js"></script>
+    <script src="scriptRegistro.js"></script>
 </body>
 </html>
