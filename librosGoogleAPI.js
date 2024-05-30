@@ -21,9 +21,9 @@ const url="https://www.googleapis.com/books/v1/volumes";
             return `
                 <div class="tendenciasLibros">
                     <img src="${info.imageLinks ? info.imageLinks.thumbnail : 'https://via.placeholder.com/150'}" alt="${info.title}" loading="lazy">
-                    
+                    <div class="tituloLibro">
                         <h4>${info.title}</h4>
-                    
+                    </div>
                 </div>
             `;
         }
@@ -40,26 +40,11 @@ const url="https://www.googleapis.com/books/v1/volumes";
             }
         }
 
-        document.querySelector('.anterior').addEventListener('click', cargarPaginaAnterior);
-        document.querySelector('.siguiente').addEventListener('click', cargarPaginaSiguiente);
+        document.querySelector('.bot_anterior').addEventListener('click', cargarPaginaAnterior);
+        document.querySelector('.bot_siguiente').addEventListener('click', cargarPaginaSiguiente);
 
         llamarAPI(currentPage);
 
 
 
-/*async function obtenerLibros() {
-    const query = 'JavaScript';
-   
-    const url = `https://www.googleapis.com/books/v1/volumes?q=${query}&key=${clave}`;
 
-    try {
-        const response = await fetch(url);
-        const data = await response.json();
-        console.log(data);
-    } catch (error) {
-        console.error('Error al buscar libros:', error);
-    }
-}
-
-// Llamar a la función para obtener libros al cargar la página
-window.onload = obtenerLibros;*/

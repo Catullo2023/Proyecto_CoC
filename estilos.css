@@ -247,20 +247,49 @@ body{
     /* grid-template-rows: repeat(6, auto); */
     justify-items: center;
     grid-gap: 20px;
-}
-  /* .tendenciasLibros{
+
+  .tendenciasLibros{
+    width: 150px;
+    margin: 10px;
    
-   
-    /* img{
+     img{
         width: 100%; 
         height: auto;
         cursor: pointer;  
         position: relative; 
-} */
-   
+        .tituloLibro {
+          margin-top: 5px;
+          font-size: 1rem;
+      }
+}   
+}  
+ 
+}
+.botones{
+  display: flex;
+    justify-content: center;
+    width: 100%; 
+    margin-top: 20px; 
+  .bot_anterior, .bot_siguiente{
+    margin: 5px 10px;
+  display: flex;
+  justify-content: center; 
+  background-color: #6c757d;
+   color: #ffffff;
+  font-family: "Platypi", serif;
   
-/* }  */
-/* consulta: Para hacer que salga un texto flotante cuando el usuario pase el cursor con el mouse. Cómo lo hago?  */
+  padding: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+       &:hover{
+              transition: all 0.5s ease-out; 
+              border-radius: 10px;
+              background-color: #3a0a07;
+              transform: scale(0.95);
+              border: 2px solid black;
+            } 
+}
+}
+
 }
 /* aside */
 .deCote{
